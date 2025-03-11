@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mcp-host
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4o-mini
+    mcp:
+      client:
+        sse:
+          connections:
+            bitcoin-tools-server:
+              url: http://localhost:8081
