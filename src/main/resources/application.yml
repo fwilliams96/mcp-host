@@ -9,7 +9,9 @@ spring:
           model: gpt-4o-mini
     mcp:
       client:
-        sse:
-          connections:
-            bitcoin-tools-server:
-              url: http://localhost:8081
+#        sse:
+#          connections:
+#            bitcoin-tools-server:
+#              url: http://localhost:8081
+        stdio:
+          servers-configuration: classpath:mcp-servers-config.json
